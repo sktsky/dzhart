@@ -41,7 +41,7 @@
 </template>
 
 <script>
-	import { getData } from '~/plugins/axios.js'
+	import baoApi from '~/api/baozhengjin'
 	export default {
 		data() {
 			return {
@@ -50,7 +50,7 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5c05e35de1eaff56e652cef1/myauction/bond').then(function(res) {
+			baoApi.Detailed().then(function(res) {
 				self.bondlist = res.data.list
 			})
 		}

@@ -44,7 +44,7 @@ a.nextpaged,a.uppaged,a.nextpaged:hover,a.uppaged:hover{color:#A8A8A8;}
 .jd_m_menu{width:100%;overflow:hidden;margin-bottom:10px;position:relative;z-index:1;}
 .jd_m_menu > a{float:left;padding:0px 12px;height:30px;line-height:30px;border-bottom:3px #FFF solid;color:#646464;}
 .jd_m_menu a:hover,a.jd_m_masel{border-bottom:3px #f08300 solid;color:#f08300;background-color:#f7f7f7;text-decoration:none;}
-.jd_m_mbor{width:100%;height:1px;overflow:hidden;background-color:#f08300;position:absolute;bottom:1px;_bottom:0px;left:0px;z-index:2;}
+.jd_m_mbor{width:100%;height:1px;overflow:hidden;background-color:#e4393c;position:absolute;bottom:1px;_bottom:0px;left:0px;z-index:2;}
 .jd_m_isb{display:inline;float:right;margin:12px 15px 0px 0px;height:27px;width:300px;overflow:hidden;border:1px #d0d0d0 solid;background-color:#f7f7f7;}
 .jd_m_iskey{padding:3px 3px 3px 23px;height:21px;line-height:21px;border:0px;width:180px;color:#636363;}
 .jd_m_isbut{width:94px;border:0px;background-color:#F08300;height:27px;line-height:27px;color:white;text-align:center;cursor:pointer;}

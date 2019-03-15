@@ -37,7 +37,7 @@
 
 <script>
 
-	import { getData } from '~/plugins/axios.js'
+	import museumApi from '~/api/zhuanti'
 	export default {
 		data() {
 			return {
@@ -47,12 +47,10 @@
 		created: function() {
 			var self = this;
 
-			getData('mock/5c02305110c9227e21fe7944/zhuanti/my').then(function(res) {
+			museumApi.myMuseum().then(function(res) {
 
 				self.mylist = res.data.mylist
 
-			}, function() {
-				console.log('失败')
 			})
 		}
 	}

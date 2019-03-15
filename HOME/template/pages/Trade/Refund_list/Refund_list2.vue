@@ -55,7 +55,7 @@
 
 <script>
 	import '~/assets/css/Custom.css'
-	import { getData } from '~/plugins/axios.js'
+	import refundApi from '~/api/refund'
 	export default {
 		data() {
 			return {
@@ -64,7 +64,7 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5bfa74024728c752b654dac3/refund/apply', 'get').then(function(res) {
+			refundApi.Apply().then(function(res) {
 
 				self.applylist = res.data.applylist
 

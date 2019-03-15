@@ -2,7 +2,7 @@
 <template id="trade_m1">
 	<div class="td_s_link">
 		<el-tabs v-model="activeName" @tab-click="handleClick">
-			<el-tab-pane label="待售地摊" name="first">
+			<el-tab-pane label="待售藏品" name="first">
 
 				<div class="jd_cz_box">
 
@@ -22,7 +22,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -85,7 +85,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist1" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist1" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -147,7 +147,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist2" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist2" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -209,7 +209,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist3" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist3" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -271,7 +271,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist4" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist4" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -333,7 +333,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist5" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist5" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -395,7 +395,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist6" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist6" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -457,7 +457,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist7" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist7" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -519,7 +519,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist8" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist8" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -581,7 +581,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist9" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist9" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -643,7 +643,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist10" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist10" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -705,7 +705,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist11" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist11" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -782,7 +782,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -845,7 +845,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist1" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist1" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -907,7 +907,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist2" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist2" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -969,7 +969,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist3" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist3" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1031,7 +1031,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist4" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist4" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1093,7 +1093,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist5" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist5" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1155,7 +1155,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist6" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist6" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1217,7 +1217,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist7" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist7" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1279,7 +1279,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist8" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist8" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1341,7 +1341,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist9" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist9" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1403,7 +1403,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist10" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist10" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1465,7 +1465,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist11" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist11" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1542,7 +1542,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1605,7 +1605,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist1" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist1" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1667,7 +1667,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist2" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist2" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1729,7 +1729,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist3" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist3" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1791,7 +1791,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist4" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist4" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1853,7 +1853,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist5" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist5" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1915,7 +1915,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist6" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist6" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -1977,7 +1977,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist7" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist7" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2039,7 +2039,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist8" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist8" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2101,7 +2101,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist9" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist9" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2163,7 +2163,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist10" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist10" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2225,7 +2225,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist11" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist11" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2302,7 +2302,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2365,7 +2365,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist1" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist1" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2427,7 +2427,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist2" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist2" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2489,7 +2489,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist3" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist3" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2551,7 +2551,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist4" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist4" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2613,7 +2613,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist5" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist5" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2675,7 +2675,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist6" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist6" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2737,7 +2737,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist7" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist7" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2799,7 +2799,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist8" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist8" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2861,7 +2861,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist9" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist9" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2923,7 +2923,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist10" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist10" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -2985,7 +2985,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist11" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist11" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3062,7 +3062,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3125,7 +3125,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist1" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist1" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3187,7 +3187,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist2" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist2" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3249,7 +3249,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist3" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist3" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3311,7 +3311,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist4" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist4" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3373,7 +3373,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist5" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist5" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3435,7 +3435,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist6" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist6" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3497,7 +3497,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist7" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist7" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3559,7 +3559,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist8" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist8" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3621,7 +3621,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist9" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist9" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3683,7 +3683,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist10" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist10" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3745,7 +3745,7 @@
 												<th>状态</th>
 												<th>操作</th>
 											</tr>
-											<tr class="td_cz_tr" onmousemove="$(this).addClass('td_cz_trsel');" onmouseout="$(this).removeClass('td_cz_trsel');" v-for="msg in salelist11" :key="msg.index">
+											<tr class="td_cz_tr"  v-for="msg in salelist11" :key="msg.index">
 												<td class="td_cz_tblimg">
 													<a href="http://www.cang.com/trade/show-19111046-2.html" target="_blank">
 														<img :src="msg.pic" class="Img100" :alt="msg.name" />
@@ -3850,7 +3850,7 @@
 <script>
 	import '~/assets/css/trade.css'
 	import '~/assets/css/jianding.css'
-	import { getData } from '~/plugins/axios.js'
+	import stallApi from '~/api/stalltrade'
 	export default {
 		data() {
 			return {
@@ -3885,111 +3885,101 @@
 
 		},
 		created: function() {
-			var self = this; //全部-全部
-			getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist', 'get').then(function(res) {
+			var self = this; //待售藏品-全部
+			stallApi.allList().then(function(res) {
 
 				self.salelist = res.data.salelist
-				//全部-瓷器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist1', 'get').then(function(res) {
+				//待售藏品-瓷器
+				stallApi.Porcelain().then(function(res) {
 
 					self.salelist1 = res.data.salelist1
 
-				}, function() {
-					console.log('请求失败')
 				})
 
-				//全部-玉器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist2', 'get').then(function(res) {
+				//待售藏品-玉器
+				stallApi.Jade().then(function(res) {
 
 					self.salelist2 = res.data.salelist2
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-字画
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist3', 'get').then(function(res) {
+				//待售藏品-字画
+				stallApi.painting().then(function(res) {
 
 					self.salelist3 = res.data.salelist3
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-钱币
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist4', 'get').then(function(res) {
+				//待售藏品-钱币
+				stallApi.Coin().then(function(res) {
 
 					self.salelist4 = res.data.salelist4
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-木器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist5', 'get').then(function(res) {
+				//待售藏品-木器
+				stallApi.Woodenware().then(function(res) {
 
 					self.salelist5 = res.data.salelist5
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-铜器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist6', 'get').then(function(res) {
+				//待售藏品-铜器
+				stallApi.Bronze().then(function(res) {
 
 					self.salelist6 = res.data.salelist6
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-珠宝
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist7', 'get').then(function(res) {
+				//待售藏品-珠宝
+				stallApi.Jewellery().then(function(res) {
 
 					self.salelist7 = res.data.salelist7
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-钟表西洋器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist8', 'get').then(function(res) {
+				//待售藏品-钟表西洋器
+				stallApi.watches().then(function(res) {
 
 					self.salelist8 = res.data.salelist8
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-杂项
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist9', 'get').then(function(res) {
+				//待售藏品-杂项
+				stallApi.miscellaneous().then(function(res) {
 
 					self.salelist9 = res.data.salelist9
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-工艺品
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist10', 'get').then(function(res) {
+				//待售藏品-工艺品
+				stallApi.Arts().then(function(res) {
 
 					self.salelist10 = res.data.salelist10
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-衍生品
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist11', 'get').then(function(res) {
+				//待售藏品-衍生品
+				stallApi.Derivative().then(function(res) {
 
 					self.salelist11 = res.data.salelist11
 
-				}, function() {
-					console.log('请求失败')
 				})
 
 			}, function() {
 				console.log('请求失败')
 			})
 
+		},
+		mounted(){
+			$(function(){
+				$(".td_cz_tr").mousemove(function(){
+					$(this).addClass('td_cz_trsel').siblings('.td_cz_tr').removeClass('td_cz_trsel')
+				})
+/*				$(".td_cz_tr").mouseout(function(){
+					$(this).removeClass('td_cz_trsel')
+				})*/
+				
+			})
 		}
 	}
 </script>
 
 <style>
-/* 修改侧导航tab栏切换的左边距 */
-.el-tabs__nav-scroll .el-tabs__nav{
-		left:4%;
-}
+	/* 修改侧导航tab栏切换的左边距 */
+	
+	.el-tabs__nav-scroll .el-tabs__nav {
+		left: 4%;
+	}
 </style>

@@ -627,7 +627,7 @@
 
 <script>
 	import '~/assets/css/paimai.css'
-	import { getData } from '~/plugins/axios.js'
+	import auctionApi from '~/api/auctionproduct'
 	export default {
 		data() {
 			return {
@@ -648,49 +648,37 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5c05e35de1eaff56e652cef1/myauction/').then(function(res) {
+			auctionApi.allLot().then(function(res) {
 				self.actionlist = res.data.actionlist
 				//未审
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/a1').then(function(res) {
+				auctionApi.Untried().then(function(res) {
 					self.actionlist1 = res.data.actionlist1
 
-				}, function() {
-					console.log('失败')
 				})
 				//待售
-			    getData('mock/5c05e35de1eaff56e652cef1/myauction/a2').then(function(res) {
+				auctionApi.forsale().then(function(res) {
 					self.actionlist2 = res.data.actionlist2
 
-				}, function() {
-					console.log('失败')
 				})
 				//已售
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/a3').then(function(res) {
+				auctionApi.Sold().then(function(res) {
 					self.actionlist3 = res.data.actionlist3
 
-				}, function() {
-					console.log('失败')
 				})
 				//到期待售
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/a4').then(function(res) {
+				auctionApi.Expire().then(function(res) {
 					self.actionlist4 = res.data.actionlist4
 
-				}, function() {
-					console.log('失败')
 				})
 				//待生成订单
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/a5').then(function(res) {
+				auctionApi.generate().then(function(res) {
 					self.actionlist5 = res.data.actionlist5
 
-				}, function() {
-					console.log('失败')
 				})
 				//已生成订单
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/a6').then(function(res) {
+				auctionApi.Generated().then(function(res) {
 					self.actionlist6 = res.data.actionlist6
 
-				}, function() {
-					console.log('失败')
 				})
 			}, function() {
 				console.log('失败')

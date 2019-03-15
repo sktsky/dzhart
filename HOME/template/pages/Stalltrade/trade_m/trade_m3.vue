@@ -68,7 +68,7 @@
 
 <script>
 	import '~/assets/css/trade.css'
-	import { getData } from '~/plugins/axios.js'
+	import commentApi from '~/api/comment'
 	export default {
 		data() {
 			return {
@@ -78,7 +78,7 @@
 		created: function() {
 			var self = this;
 			//获取地摊评论请求
-			getData('mock/5c0373ed0694c411d85d83cb/tradelist/trade3', 'get').then(function(res) {
+			commentApi.Comment().then(function(res) {
 				self.commentlist = res.data.commentlist
 			}, function() {
 				console.log('请求失败')

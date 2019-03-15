@@ -26,7 +26,7 @@
 </template>
 
 <script>
-	import { getData } from '~/plugins/axios.js'
+	import pingjiaApi from '~/api/pingjia'
 	export default {
 		data() {
 			return {
@@ -36,7 +36,7 @@
 		created: function() {
 			var self = this;
 			//获取我的买家信誉请求
-			getData('mock/5bfcae904540a062a039a479/pingjia/pingjia', 'get').then(function(res) {
+			pingjiaApi.Buyer().then(function(res) {
 
 				self.pingjialist = res.data.pingjialist
 
@@ -49,35 +49,41 @@
 </script>
 
 <style>
-    .Table {
-	    border-collapse: collapse;
-	    border: none;
-	    color: #646464;
-	    margin: 10px 0 0 10px;
+	.Table {
+		border-collapse: collapse;
+		border: none;
+		color: #646464;
+		margin: 10px 0 0 10px;
 	}
+	
 	.Table .tr_heads th {
-	    color: #000;
-	    background: #f2f2f2;
+		color: #000;
+		background: #f2f2f2;
 	}
-	.Table td, .Table .tr_heads th {
-	    border: solid #e5e5e5 1px;
-	    padding: 5px;
-	    text-align:center;
+	
+	.Table td,
+	.Table .tr_heads th {
+		border: solid #e5e5e5 1px;
+		padding: 5px;
+		text-align: center;
 	}
-	.jd_m_mbor{
-		background-color:#d0d0d0;
+	
+	.jd_m_mbor {
+		background-color: #d0d0d0;
 	}
-	.jd_cz_tbl th{
-		border:1px solid #e5e5e5;
+	
+	.jd_cz_tbl th {
+		border: 1px solid #e5e5e5;
 	}
+	
 	.my_credit {
-    height: 25px;
-    font: 16px "SimHei","Microsoft YaHei","SimSun","Arial","sans-serif";
-        font-weight: normal;
-        line-height: normal;
-    font-weight: bold;
-    line-height: 25px;
-    color: #000;
-    margin: 10px 0 0 10px;
-}
+		height: 25px;
+		font: 16px "SimHei", "Microsoft YaHei", "SimSun", "Arial", "sans-serif";
+		font-weight: normal;
+		line-height: normal;
+		font-weight: bold;
+		line-height: 25px;
+		color: #000;
+		margin: 10px 0 0 10px;
+	}
 </style>

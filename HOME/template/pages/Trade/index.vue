@@ -851,7 +851,7 @@
 
 <script>
 	import '~/assets/css/Custom.css'
-	import { getData } from '~/plugins/axios.js'
+	import tradeApi from '~/api/trade'
 	export default {
 		data() {
 			return {
@@ -870,70 +870,60 @@
 		methods: {
 			handleClick(tab, event) {}
 		},
+/*			asyncData() {
+			return tradeApi.allPay().then(res => {
+				return {
+					message: res.data.boughtlist
+				}
+			})
+
+		},*/
 		created: function() {
 			//			我的买单-全部买单
-			getData('mock/5bee927124e7ee36667dbb0f/trade/#boughtlist', 'get').then(res => {
+			tradeApi.allPay().then(res => {
 
 				this.message = res.data.boughtlist
-			}), err => {
-				console.log(err)
-			}
+			})
 			//			我的买单-进行中
-			getData('mock/5bee927124e7ee36667dbb0f/trade/conduct#conductlist', 'get').then(res => {
+			tradeApi.Conduct().then(res => {
 
 				this.conductlist = res.data.conductlist
-			}), err => {
-				console.log(err)
-			}
+			})
 			//			我的买单-等待确认价格
-			getData('mock/5bee927124e7ee36667dbb0f/trade/confirm', 'get').then(res => {
+			tradeApi.WConfirm().then(res => {
 
 				this.confirmlist = res.data.confirmlist
-			}), err => {
-				console.log(err)
-			}	
+			})
 			//			我的买单-等待付款
-			getData('mock/5bee927124e7ee36667dbb0f/trade/payment', 'get').then(res => {
+			tradeApi.WPayment().then(res => {
 
 				this.paymentlist = res.data.paymentlist
-			}), err => {
-				console.log(err)
-			}	
+			})
 			//			我的买单-等待发货
-			getData('mock/5bf796ef90fa7f6162070f84/trade_sale/goods', 'get').then(res => {
+			tradeApi.Wgoods().then(res => {
 
 				this.goods = res.data.goodslist
-			}), err => {
-				console.log(err)
-			}	
+			})
 			//			我的买单-等待验货
-			getData('mock/5bee927124e7ee36667dbb0f/trade/Inspection', 'get').then(res => {
+			tradeApi.WInspection().then(res => {
 
 				this.Inspectionlist = res.data.Inspectionlist
-			}), err => {
-				console.log(err)
-			}
+			})
 			//			我的买单-交易成功
-			getData('mock/5bee927124e7ee36667dbb0f/trade/transaction', 'get').then(res => {
+			tradeApi.Successtrade().then(res => {
 
 				this.transactionlist = res.data.transactionlist
-			}), err => {
-				console.log(err)
-			}
+			})
 			//			我的买单-退款
-			getData('mock/5bee927124e7ee36667dbb0f/trade/refund', 'get').then(res => {
+			tradeApi.refund().then(res => {
 
 				this.refundlist = res.data.refundlist
-			}), err => {
-				console.log(err)
-			}	
+			})
 			//			我的买单-需要评价
-			getData('mock/5bee927124e7ee36667dbb0f/trade/evaluate', 'get').then(res => {
+			tradeApi.evaluate().then(res => {
 
 				this.evaluatelist = res.data.evaluatelist
-			}), err => {
-				console.log(err)
-			}				
+			})			
 		}
 	}
 </script>

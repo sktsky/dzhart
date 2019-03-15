@@ -45,7 +45,7 @@
 
 <script>
 	import '~/assets/css/Custom.css'
-	import { getData } from '~/plugins/axios.js'
+	import punishApi from '~/api/punishlist'
 	export default {
 		data() {
 			return {
@@ -54,12 +54,10 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5bf7cc8f2caeed673a1af57b/Trade_Complaint/Trade_Complaint#complaintlist', 'get').then(function(res) {
+			punishApi.Received().then(function(res) {
 
 				self.complaintlist = res.data.complaintlist
 
-			}, function() {
-				console.log('请求失败')
 			})
 
 		}

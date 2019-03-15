@@ -15,7 +15,7 @@
 .menu .menu_fill1 {width: 866px; float: left; height: 53px; border-bottom: 1px solid #d0d0d0;}
 .menu .menu_fill3 {width:550px; float:left; height:53px;} 
 .menu .menu_fill4 {width:554px; float:left; height:3px; border-bottom:1px solid #d0d0d0;} 
-.mright {display: inline-block; position: relative; margin: 0px 0px 20px -1px; padding: 0px; width: 970px; float: left; border: 1px solid rgb(208, 208, 208); border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; background: rgb(255, 255, 255); min-height:588px;}
+.mright {display: inline-block; position: relative; margin: 0px 0px 20px -1px; padding: 0px; width: 970px; border: 1px solid rgb(208, 208, 208); border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; background: rgb(255, 255, 255); min-height:588px;}
 .mright .SaleInfoTable { border-collapse: collapse; border: none; color: #656565; margin: 0px 20px; }
 .mright .SaleInfoTable td {border: solid #e3e3e3 1px; padding: 7px;}
 .LinkABlue a {color:#3065cf;}

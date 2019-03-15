@@ -860,7 +860,7 @@
 
 <script>
 	import '~/assets/css/Custom.css'
-	import { getData } from '~/plugins/axios.js'
+	import soldApi from '~/api/soldlist'
 	export default {
 		data() {
 			return {
@@ -883,78 +883,52 @@
 			}
 		},
 		created: function() {
-			var self = this;
-			//						我的卖单-全部卖单
-			getData('mock/5bf796ef90fa7f6162070f84/trade_sale/#boughtlist', 'get').then(function(res) {
+			//			我的卖单-全部卖单
+			soldApi.AllList().then(res => {
 
-				self.message = res.data.boughtlist
-				//					我的卖单-进行中				
-				getData('mock/5bf796ef90fa7f6162070f84/trade_sale/conduct', 'get').then(function(res) {
+				this.message = res.data.boughtlist
+			})
+			//			我的卖单-进行中
+			soldApi.Conduct().then(res => {
 
-					self.conductlist = res.data.conductlist
+				this.conductlist = res.data.conductlist
+			})
+			//			我的卖单-等待确认价格
+			soldApi.WConfirm().then(res => {
 
-				}, function() {
-					console.log('请求失败')
-				});
-				//					我的卖单-等待确认价格
-				getData('mock/5bf796ef90fa7f6162070f84/trade_sale/confirm', 'get').then(function(res) {
+				this.confirmlist = res.data.confirmlist
+			})
+			//			我的卖单-等待付款
+			soldApi.WPayment().then(res => {
 
-					self.confirmlist = res.data.confirmlist
+				this.paymentlist = res.data.paymentlist
+			})
+			//			我的卖单-等待发货
+			soldApi.Wgoods().then(res => {
 
-				}, function() {
-					console.log('请求失败')
-				});
-				//					我的卖单-等待付款				
-				getData('mock/5bf796ef90fa7f6162070f84/trade_sale/payment', 'get').then(function(res) {
+				this.goods = res.data.goodslist
+			})
+			//			我的卖单-等待验货
+			soldApi.WInspection().then(res => {
 
-					self.paymentlist = res.data.paymentlist
+				this.Inspectionlist = res.data.Inspectionlist
+			})
+			//			我的卖单-交易成功
+			soldApi.Successtrade().then(res => {
 
-				}, function() {
-					console.log('请求失败')
-				});
-				//					我的卖单-等待发货			
-				getData('mock/5bf796ef90fa7f6162070f84/trade_sale/goods', 'get').then(function(res) {
+				this.transactionlist = res.data.transactionlist
+			})
+			//			我的卖单-退款
+			soldApi.refund().then(res => {
 
-					self.goods = res.data.goodslist
+				this.refundlist = res.data.refundlist
+			})
+			//			我的卖单-需要评价
+			soldApi.evaluate().then(res => {
 
-				}, function() {
-					console.log('请求失败')
-				});
-				//					我的卖单-等待验货
-				getData('mock/5bf796ef90fa7f6162070f84/trade_sale/Inspection', 'get').then(function(res) {
-
-					self.Inspectionlist = res.data.Inspectionlist
-
-				}, function() {
-					console.log('请求失败')
-				});
-				//					我的卖单-交易成功
-				getData('mock/5bf796ef90fa7f6162070f84/trade_sale/transaction', 'get').then(function(res) {
-
-					self.transactionlist = res.data.transactionlist
-
-				}, function() {
-					console.log('请求失败')
-				});
-				//					我的卖单-退款
-				getData('mock/5bf796ef90fa7f6162070f84/trade_sale/refund', 'get').then(function(res) {
-
-					self.refundlist = res.data.refundlist
-
-				}, function() {
-					console.log('请求失败')
-				});
-				//					我的卖单-需要评价
-				getData('mock/5bf796ef90fa7f6162070f84/trade_sale/evaluate', 'get').then(function(res) {
-
-					self.evaluatelist = res.data.evaluatelist
-
-				}, function() {
-					console.log('请求失败')
-				});
-			}, function() {
-				console.log('请求失败')
-			});
+				this.evaluatelist = res.data.evaluatelist
+			})
+			
 		}
 	}
 </script>

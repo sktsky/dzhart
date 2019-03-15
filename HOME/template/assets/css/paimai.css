@@ -159,7 +159,7 @@ a.pai_s_l_ib:hover,a.pai_s_l_ib_s:hover,.pai_s_l_ib_s,a.pai_s_l_ilb:hover,a.pai_
 .btn_td_t{margin:2px 0;line-height:22px;font-size:14px;font-weight:bold;}
 .btn_td_m{width:150px;float:left;margin:10px 0;line-height:22px;font-size:14px;}
 .btn_td_m a{color:Red;}
-th{height:30px;line-height: 30px;background-color:#fff;font-size:12px;font-weight:normal;color:#646464;text-align:center;border:1px solid #e5e5e5;}
+th{height:30px;line-height: 30px;background-color:#fff;font-size:12px;font-weight:normal;color:#646464;text-align:center;}
 
 
 .btn_y80_25,.btn_b80_25{height:28px;border:none;width:94px;background-position:-12px -46px;color:#ffffff;font-size:14px;line-height:28px;font-weight:bold;cursor:pointer;}

@@ -44,8 +44,6 @@
 				<tr>
 					<td colspan="2" style=" padding-left:200px;">
 						<input name="butAdd" value="我要申请" id="butAdd" class="btnSave" style="width:100px;" type="submit">
-						<input name="HidUName" id="HidUName" type="hidden"><input name="HidZTUrl" id="HidZTUrl" type="hidden">
-						<input name="HidUrl" id="HidUrl" type="hidden">
 					</td>
 				</tr>
 			</tbody>

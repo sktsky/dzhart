@@ -64,7 +64,7 @@
 
 <script>
 	import '~/assets/css/paimai.css'
-	import { getData } from '~/plugins/axios.js'
+	import collectionApi from '~/api/auctionproduct'
 	export default {
 		data() {
 			return {
@@ -73,7 +73,7 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5c05e35de1eaff56e652cef1/myauction/auction').then(function(res) {
+			collectionApi.Mycollection().then(function(res) {
 				self.auction = res.data.auctionlist
 			})
 		}

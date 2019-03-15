@@ -28,7 +28,7 @@
 
 <script>
 	import '~/assets/css/Custom.css'
-	import { getData } from '~/plugins/axios.js'
+	import paylogApi from '~/api/paylog'
 	export default {
 		data() {
 			return {
@@ -37,7 +37,7 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5bfbab3a95f7220381b70926/cash', 'get').then(function(res) {
+			paylogApi.Record().then(function(res) {
 
 				self.cashlist = res.data.cashlist
 

@@ -93,7 +93,7 @@
 
 <script>
 	import '~/assets/css/shop.css'
-	import { getData } from '~/plugins/axios.js'
+	import searchApi from '~/api/commodity'
 	export default {
 		data() {
 			return {
@@ -102,7 +102,7 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5c206fc50fd1077df5e6e924/s/').then(function(res) {
+			searchApi.allgoods().then(function(res) {
 				self.list = res.data.list
 			})
 		}

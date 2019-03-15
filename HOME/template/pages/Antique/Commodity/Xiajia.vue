@@ -161,7 +161,7 @@
 
 <script>
 	import '~/assets/css/shop.css'
-	import { getData } from '~/plugins/axios.js'
+	import xiajiaApi from '~/api/commodity'
 	export default {
 		data() {
 			return {
@@ -173,10 +173,10 @@
 		created: function() {
 			var self = this;
 			//自行下架
-			getData('mock/5c206fc50fd1077df5e6e924/s/shelf').then(function(res) {
+			xiajiaApi.examine().then(function(res) {
 				self.list = res.data.list
 				//审核下架
-				getData('mock/5c206fc50fd1077df5e6e924/s/shelf2').then(function(res) {
+				xiajiaApi.Voluntarily().then(function(res) {
 					self.list2 = res.data.list
 				})
 			}, function() {

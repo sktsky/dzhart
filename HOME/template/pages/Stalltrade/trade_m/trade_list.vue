@@ -2,7 +2,7 @@
 <template id="trade_m1">
 	<div class="td_s_link">
 		<el-tabs v-model="activeName" @tab-click="handleClick">
-			<el-tab-pane label="待售地摊" name="first">
+			<el-tab-pane label="已售藏品" name="first">
 
 				<div class="jd_cz_box">
 
@@ -3850,7 +3850,7 @@
 <script>
 	import '~/assets/css/trade.css'
 	import '~/assets/css/jianding.css'
-	import { getData } from '~/plugins/axios.js'
+	import soldApi from '~/api/stalltrade_a'
 	export default {
 		data() {
 			return {
@@ -3885,98 +3885,76 @@
 
 		},
 		created: function() {
-			var self = this; //全部-全部
-			getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist').then(function(res) {
+			var self = this; //已售藏品-全部
+			soldApi.allList().then(function(res) {
 
 				self.salelist = res.data.salelist
-				//全部-瓷器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist1').then(function(res) {
+				//已售藏品-瓷器
+				soldApi.Porcelain().then(function(res) {
 
 					self.salelist1 = res.data.salelist1
 
-				}, function() {
-					console.log('请求失败')
 				})
 
-				//全部-玉器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist2').then(function(res) {
+				//已售藏品-玉器
+				soldApi.Jade().then(function(res) {
 
 					self.salelist2 = res.data.salelist2
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-字画
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist3').then(function(res) {
+				//已售藏品-字画
+				soldApi.painting().then(function(res) {
 
 					self.salelist3 = res.data.salelist3
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-钱币
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist4').then(function(res) {
+				//已售藏品-钱币
+				soldApi.Coin().then(function(res) {
 
 					self.salelist4 = res.data.salelist4
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-木器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist5').then(function(res) {
+				//已售藏品-木器
+				soldApi.Woodenware().then(function(res) {
 
 					self.salelist5 = res.data.salelist5
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-铜器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist6').then(function(res) {
+				//已售藏品-铜器
+				soldApi.Bronze().then(function(res) {
 
 					self.salelist6 = res.data.salelist6
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-珠宝
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist7').then(function(res) {
+				//已售藏品-珠宝
+				soldApi.Jewellery().then(function(res) {
 
 					self.salelist7 = res.data.salelist7
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-钟表西洋器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist8').then(function(res) {
+				//已售藏品-钟表西洋器
+				soldApi.watches().then(function(res) {
 
 					self.salelist8 = res.data.salelist8
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-杂项
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist9').then(function(res) {
+				//已售藏品-杂项
+				soldApi.miscellaneous().then(function(res) {
 
 					self.salelist9 = res.data.salelist9
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-工艺品
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist10').then(function(res) {
+				//已售藏品-工艺品
+				soldApi.Arts().then(function(res) {
 
 					self.salelist10 = res.data.salelist10
 
-				}, function() {
-					console.log('请求失败')
 				})
-				//全部-衍生品
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/salelist11').then(function(res) {
+				//已售藏品-衍生品
+				soldApi.Derivative().then(function(res) {
 
 					self.salelist11 = res.data.salelist11
 
-				}, function() {
-					console.log('请求失败')
 				})
 
 			}, function() {

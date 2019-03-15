@@ -366,7 +366,7 @@
 
 <script>
 	import '~/assets/css/paimai.css'
-	import { getData } from '~/plugins/axios.js'
+	import agentApi from '~/api/auctionproduct'
 	export default {
 		data() {
 			return {
@@ -385,28 +385,22 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5c05e35de1eaff56e652cef1/myauction/ag').then(function(res) {
+			agentApi.agent().then(function(res) {
 				self.agentlist = res.data.list
 				//正在代理
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/ag1').then(function(res) {
+				agentApi.Being().then(function(res) {
 					self.agentlist1 = res.data.list
-				}, function() {
-					console.log('失败')
 				})
 				//过期代理
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/ag2').then(function(res) {
+				agentApi.overdue().then(function(res) {
 					self.agentlist2 = res.data.list
-				}, function() {
-					console.log('失败')
 				})
 				//未结拍
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/ag3').then(function(res) {
+				agentApi.Unfilming().then(function(res) {
 					self.agentlist3 = res.data.list
-				}, function() {
-					console.log('失败')
 				})
 				//已结拍
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/ag4').then(function(res) {
+				agentApi.Patted().then(function(res) {
 					self.agentlist4 = res.data.list
 				}, function() {
 					console.log('失败')

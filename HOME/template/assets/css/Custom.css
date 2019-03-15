@@ -1,4 +1,4 @@
-/* --¹«¹²-- */
+/* --ï¿½ï¿½ï¿½ï¿½-- */
 .red {color:#f30000;}
 .Grey {color:#646464;}
 .clearboth {clear:both;}
@@ -22,10 +22,10 @@
 .btnRe {height:30px; margin-left:40px; background-color:#919191; border-radius:5px; border:0px; color:#eeeded; font-weight:700; font-size:16px; line-height:30px; text-align:center;}
 .btnRe:hover {background-color:#a1a0a0;}
 .ico {background:url(/myhome/Trade/images/ico.png) no-repeat;}
-.input-text {width: 150px; height: 16px; padding: 6px 5px 6px 5px; border: 1px solid #d0d0d0; float: none; font-size: 12px; font-family: arial,"ËÎÌå"; outline: none;}
+.input-text {width: 150px; height: 16px; padding: 6px 5px 6px 5px; border: 1px solid #d0d0d0; float: none; font-size: 12px; font-family: arial,"ï¿½ï¿½ï¿½ï¿½"; outline: none;}
 .ddl {height:34px; padding:3px; font-size:12px;outline:none;}
 
-/*--·­Ò³--*/
+/*--ï¿½ï¿½Ò³--*/
 .page{clear:both;text-align:right;padding:20px 0px 20px 0px;}
 .page a{height:25px;line-height:25px;padding:0px 10px;font-size:12px;border:1px #e1e1e1 solid;margin-right:5px;display:inline-block;}
 .page span.act{height:25px;line-height:25px;padding:0px 10px;font-size:12px;border:1px #e1e1e1 solid;margin-right:5px;display:inline-block;  text-decoration:none;color:#fff;background:#00b7ec;}
@@ -35,7 +35,7 @@
 .webdiyer_btn { padding:3px 6px; margin:0 5px;}
 
 .bodywrap{display:block;position:relative;width:1160px;margin:30px auto;}
-.mright{display:inline-block;position:relative;margin:0px 0px 20px -1px;padding:0;width:970px;float:left;border:1px solid #d0d0d0;background:#fff; min-height:588px;}
+.mright{display:inline-block;position:relative;margin:0px 0px 20px -1px;padding:0;width:970px;border:1px solid #d0d0d0;background:#fff; min-height:588px;}
 .menu .menu_n {width:103px; height:53px; float:left; border-bottom:1px solid #d0d0d0; border-right:1px solid #d0d0d0; text-align:center;display:block; width:103px; height:53px; line-height:53px;}
 .menu .menu_n:hover {text-decoration:none; color:#e4393c;}
 .menu .menu_y {background-color:#f7f7f7; border-bottom:1px solid #f7f7f7; display:block; width:103px; height:53px;  color:#e4393c; line-height:53px;}
@@ -51,7 +51,7 @@
 .mright .soBtn:hover{background-color:#EF0000;}
 .mright .menuTwo {padding:10px 20px; border-bottom:1px solid #d0d0d0;}
 .mright .menuTwo a{margin-left:10px;}
-.mright .SaleInfoTable {border-collapse:collapse; border:none; color:#656565; margin:0px 20px;}/*×ÖÌåÑÕÉ«*/
+.mright .SaleInfoTable {border-collapse:collapse; border:none; color:#656565; margin:0px 20px;}/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«*/
 .mright .SaleInfoTable td {border:solid #e3e3e3 1px; padding:5px; }
 .mright .orderdate {margin-left:30px;}
 .mright .remark {float:right; width:70px; text-align:center;}
@@ -69,11 +69,11 @@
 .GoodsFrom {color:#9A9697; margin-top:53px;}
 .FromFlag {margin-left:15px;}
 
-/*--ÎÒµÄÂòµ¥--*/
+/*--ï¿½Òµï¿½ï¿½ï¿½--*/
 .bought_list btn {background-color:#e4393c; border:0px; border-radius:4px; color:#FFFFFF; cursor:pointer; padding:2px 6px;}
 .bought_list .del {line-height:20px;}
 
-/*- ½»Ò×²½Öè --*/
+/*- ï¿½ï¿½ï¿½×²ï¿½ï¿½ï¿½ --*/
 .buyStep {width:760px; height:80px; overflow:hidden; margin:0 auto;}
 .buyStep .img_step {width:40px; height:40px; float:left; text-align:center; line-height:38px; font-weight:700; color:#FFF; font-size:16px; overflow:hidden;}
 .buyStep .img_step_y {background-position:-41px 0px;}
@@ -95,7 +95,7 @@
 .orderconfirm .DeTable {margin-top:20px;}
 .orderconfirm .DeTable td {padding:7px;}
 .orderconfirm .DeTable .InfoPwd {margin-left:10px;}
-.orderconfirm .DeTable .input-text {width: 150px; height: 16px;	padding: 6px 5px 6px 5px; border: 1px solid #d0d0d0; float:none; font-size: 12px; 	font-family: arial,"ËÎÌå"; outline:none;} 
+.orderconfirm .DeTable .input-text {width: 150px; height: 16px;	padding: 6px 5px 6px 5px; border: 1px solid #d0d0d0; float:none; font-size: 12px; 	font-family: arial,"ï¿½ï¿½ï¿½ï¿½"; outline:none;} 
 
 .tradeDetail .OrderDataList {margin:30px; line-height:22px;}
 .tradeDetail .logistics_order {border-collapse:collapse; border:none; color:#656565; margin:30px;}
@@ -148,7 +148,7 @@
 .refund_detail .box_Add {margin:10px 0 10px 20px;}
 .refund_detail .box_Add td {padding:5px;}
 .refund_detail .box_Add #wuliucompany {height:34px; padding:3px; font-size:12px;outline:none;}
-.refund_detail .box_Add #txtwuliuCode {width: 150px; height: 16px;	padding: 6px 5px 6px 5px; border: 1px solid #d0d0d0; float:none; font-size: 12px; 	font-family: arial,"ËÎÌå"; outline:none;}
+.refund_detail .box_Add #txtwuliuCode {width: 150px; height: 16px;	padding: 6px 5px 6px 5px; border: 1px solid #d0d0d0; float:none; font-size: 12px; 	font-family: arial,"ï¿½ï¿½ï¿½ï¿½"; outline:none;}
 .refund_detail .box_Add #btnAdd {background-color:#e4393c; border:0px; padding:1px 5px; border-radius:4px; color:#FFFFFF; cursor:pointer; padding:5px 10px;}
 .refund_detail .box_Add #btnAdd:hover{background-color:#f19b34;}
 
@@ -170,7 +170,7 @@
 .pay_in .calculator td{height:30px; padding:0 5px; line-height:30px;}
 .pay_in .calculator .btncal{ width:70px; height:26px; background-color:#e4393c; border-radius:5px; border:0px; color:#FFFFFF; font-weight:700; font-size:12px; text-align:center;cursor:pointer;}
 .pay_in .calculator .btncal:hover {background-color:#faa947; text-decoration:none;}
-.pay_in .calculator .txt{width: 150px;height: 16px;padding: 6px 5px 6px 5px;border: 1px solid #d0d0d0;float: none;font-size: 12px;font-family: arial,"ËÎÌå";outline: none;}
+.pay_in .calculator .txt{width: 150px;height: 16px;padding: 6px 5px 6px 5px;border: 1px solid #d0d0d0;float: none;font-size: 12px;font-family: arial,"ï¿½ï¿½ï¿½ï¿½";outline: none;}
 .pay_in .Bank_radio td{ padding:8px 5px; height:35px;}
 .pay_in .Bank_radio li .radspan { margin-top:30px; vertical-align:middle; display:block;}
 .pay_in .Bank_radio .btncal{ width:120px; height:36px; background-color:#e4393c; border-radius:5px; border:0px; color:#FFFFFF; font-weight:700; font-size:16px; text-align:center;cursor:pointer;}
@@ -178,7 +178,7 @@
 .pay_in .remit_table {margin:20px 0 30px 10px;}
 .pay_in .remit_table td {height:30px; padding:2px;}
 .pay_in .remit_table .column1 {width:150px; text-align:right;}
-.pay_in .remit_table .txt {width: 150px;height: 16px;padding: 6px 5px 6px 5px;border: 1px solid #d0d0d0;float: none;font-size: 12px;font-family: arial,"ËÎÌå";outline: none;}
+.pay_in .remit_table .txt {width: 150px;height: 16px;padding: 6px 5px 6px 5px;border: 1px solid #d0d0d0;float: none;font-size: 12px;font-family: arial,"ï¿½ï¿½ï¿½ï¿½";outline: none;}
 .pay_in .remit_table .ddl  {height:34px; padding:3px; font-size:12px;outline:none;}
 .pay_in .remit_table .must {color:#F00; padding-left:10px;}
 .pay_in .remit_table .btncal{ width:80px; height:26px; background-color:#e4393c; border-radius:5px; border:0px; color:#FFFFFF; font-weight:700; font-size:16px; text-align:center;cursor:pointer;}
@@ -193,7 +193,7 @@
 .btninfobox {text-decoration:none;width:120px;height:35px;background-color:#E4393C;border-radius:5px;border:0px;color:#FFFFFF;font-weight:700;font-size:16px;text-align:center;cursor:pointer;margin-top:10px;margin-right:20px;}
 .small_btn{text-decoration: none;width: 100px;height: 30px;background-color: #E4393C;border-radius: 5px;border:0px;color:#FFFFFF;
 font-weight: 700;font-size: 16px;text-align: center;cursor: pointer;margin-left: 10px;}
-.PayTable .txt {width: 150px;height: 16px;padding: 6px 5px 6px 5px;border: 1px solid #d0d0d0;float: none;font-size: 12px;font-family: arial,"ËÎÌå";outline: none;}
+.PayTable .txt {width: 150px;height: 16px;padding: 6px 5px 6px 5px;border: 1px solid #d0d0d0;float: none;font-size: 12px;font-family: arial,"ï¿½ï¿½ï¿½ï¿½";outline: none;}
 .PayTable .ddl {height:34px; padding:3px; font-size:12px;outline:none;}
 .PayTable .ddd {width:20px; height:20px; background-color:#030;}
 
@@ -223,9 +223,9 @@ font-weight: 700;font-size: 16px;text-align: center;cursor: pointer;margin-left:
 .AdActionList .Table {border-collapse:collapse; border:none; color:#656565; margin:30px 0 10px 20px;}
 .AdActionList .Table td {border:solid #e3e3e3 1px; padding:7px; }
 
-.bankInfoTable {width:98%; margin:10px 10px;border-collapse:collapse; border:none; color:#656565;}/*×ÖÌåÑÕÉ«*/
-.bankInfoTable td {border:solid #e3e3e3 1px; padding:7px; }/*¿òÑÕÉ«*/
-.bankInfoTable th {border:solid #e3e3e3 1px; padding:7px; font-weight:700; text-align:center; }/*¿òÑÕÉ«*/
+.bankInfoTable {width:98%; margin:10px 10px;border-collapse:collapse; border:none; color:#656565;}/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«*/
+.bankInfoTable td {border:solid #e3e3e3 1px; padding:7px; }/*ï¿½ï¿½ï¿½ï¿½É«*/
+.bankInfoTable th {border:solid #e3e3e3 1px; padding:7px; font-weight:700; text-align:center; }/*ï¿½ï¿½ï¿½ï¿½É«*/
 .bankInfoTable a {color:#3366cc;}
 .bankInfoTable .btnSave1 {margin-left:10px; background-color:#999;}
 .bankInfoTable .btnSave2 {margin-left:10px;}

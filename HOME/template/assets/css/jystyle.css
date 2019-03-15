@@ -215,7 +215,7 @@ body{font-family:"SimSun",Tahoma,Arial;font-size:12px;background-color:#fff;marg
 .nright .haoyou li ul li p{display:block;position:relative;float:left;width:180px;margin-left:10px;}
 .nright .haoyou li ul li p+p{float:right;text-align:right;font-weight:bold; color: #000;}
 .nright .haoyou li ul li a:hover p{color:#ff7f00;text-decoration:underline;}
-.mright{display:inline-block;position:relative;margin:0px 0px 20px -1px;padding:0;width:970px;float:left;border:1px solid #d0d0d0;background:#fff;min-height:956px;}
+.mright{display:inline-block;position:relative;margin:0px 0px 20px -1px;padding:0;width:970px;border:1px solid #d0d0d0;background:#fff;min-height:956px;}
 .footern{display:block;position:relative;width:100%;min-width:1160px;margin-top:20px;padding-top:20px;padding-bottom:20px;background:#fff;border-top:1px solid #d0d0d0;clear:both;}
 .footern .inner{display:block;width:690px;margin:0px auto;text-align:center;color:#646464;line-height:30px;}
 .footern a{color:#878787;}

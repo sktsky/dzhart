@@ -27,7 +27,7 @@
 </template>
 
 <script>
-	import { getData } from '~/plugins/axios.js'
+	import pingjiaApi from '~/api/pingjia'
 	export default {
 		data() {
 			return {
@@ -37,7 +37,7 @@
 		created: function() {
 			var self = this;
 			//获取我的卖家信誉请求
-			getData('mock/5bfcae904540a062a039a479/pingjia/seller', 'get').then(function(res) {
+			pingjiaApi.Seller().then(function(res) {
 
 				self.sellerlist = res.data.sellerlist
 
@@ -65,7 +65,6 @@
 	.Table td,
 	.Table .tr_heads th {
 		border: solid #e5e5e5 1px;
-		padding: 5px;
 		text-align: center;
 	}
 	
@@ -76,14 +75,15 @@
 	.jd_cz_tbl th {
 		border: 1px solid #e5e5e5;
 	}
+	
 	.my_credit {
-    height: 25px;
-    font: 16px "SimHei","Microsoft YaHei","SimSun","Arial","sans-serif";
-        font-weight: normal;
-        line-height: normal;
-    font-weight: bold;
-    line-height: 25px;
-    color: #000;
-    margin: 10px 0 0 10px;
-}
+		height: 25px;
+		font: 16px "SimHei", "Microsoft YaHei", "SimSun", "Arial", "sans-serif";
+		font-weight: normal;
+		line-height: normal;
+		font-weight: bold;
+		line-height: 25px;
+		color: #000;
+		margin: 10px 0 0 10px;
+	}
 </style>

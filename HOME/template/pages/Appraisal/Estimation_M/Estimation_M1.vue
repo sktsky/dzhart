@@ -102,7 +102,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -151,7 +151,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -200,7 +200,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -249,7 +249,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -298,7 +298,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -347,7 +347,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -396,7 +396,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -445,7 +445,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -494,7 +494,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -543,7 +543,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -612,7 +612,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -661,7 +661,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -710,7 +710,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -759,7 +759,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -808,7 +808,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -857,7 +857,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -906,7 +906,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -955,7 +955,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1004,7 +1004,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1053,7 +1053,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1102,7 +1102,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1171,7 +1171,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1220,7 +1220,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1269,7 +1269,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1318,7 +1318,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1367,7 +1367,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1416,7 +1416,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1465,7 +1465,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1514,7 +1514,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1563,7 +1563,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1612,7 +1612,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1661,7 +1661,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1730,7 +1730,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1779,7 +1779,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1828,7 +1828,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1877,7 +1877,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -1926,7 +1926,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -2288,7 +2288,7 @@
 												</tr>
 											</tbody>
 										</table>
-										<input name="hidUName" type="hidden" id="hidUName" value="yeyou33" />
+										
 									</div>
 
 								</el-tab-pane>
@@ -2804,7 +2804,7 @@
 </template>
 <script>
 	import '~/assets/css/jianding.css'
-	import { getData } from '~/plugins/axios.js'
+	import estimationApi from '~/api/estimation'
 	export default {
 		data() {
 			return {
@@ -2838,89 +2838,69 @@
 		},
 		created: function() {
 			var self = this; //全部-全部
-			getData('mock/5c0106de4ed9b43d7590d4eb/estimation/all', 'get').then(function(res) {
+			estimationApi.allList().then(function(res) {
 
 				self.mylist = res.data.mylist
 				//全部-瓷器
-				getData('mock/5c0106de4ed9b43d7590d4eb/estimation/mylist1', 'get').then(function(res) {
+				estimationApi.Porcelain().then(function(res) {
 
 					self.mylist1 = res.data.mylist1
 
-				}, function() {
-					console.log('请求失败')
 				})
 
 				//全部-玉器
-				getData('mock/5c0106de4ed9b43d7590d4eb/estimation/mylist2', 'get').then(function(res) {
+				estimationApi.Jade().then(function(res) {
 
 					self.mylist2 = res.data.mylist2
 
-				}, function() {
-					console.log('请求失败')
 				})
 				//全部-字画
-				getData('mock/5c0106de4ed9b43d7590d4eb/estimation/mylist3', 'get').then(function(res) {
+				estimationApi.painting().then(function(res) {
 
 					self.mylist3 = res.data.mylist3
 
-				}, function() {
-					console.log('请求失败')
 				})
 				//全部-钱币
-				getData('mock/5c0106de4ed9b43d7590d4eb/estimation/mylist4', 'get').then(function(res) {
+				estimationApi.Coin().then(function(res) {
 
 					self.mylist4 = res.data.mylist4
 
-				}, function() {
-					console.log('请求失败')
 				})
 				//全部-木器
-				getData('mock/5c0106de4ed9b43d7590d4eb/estimation/mylist5', 'get').then(function(res) {
+				estimationApi.Woodenware().then(function(res) {
 
 					self.mylist5 = res.data.mylist5
 
-				}, function() {
-					console.log('请求失败')
 				})
 				//全部-铜器
-				getData('mock/5c0106de4ed9b43d7590d4eb/estimation/mylist6', 'get').then(function(res) {
+				estimationApi.Bronze().then(function(res) {
 
 					self.mylist6 = res.data.mylist6
 
-				}, function() {
-					console.log('请求失败')
 				})
 				//全部-珠宝
-				getData('mock/5c0106de4ed9b43d7590d4eb/estimation/mylist7', 'get').then(function(res) {
+				estimationApi.Jewellery().then(function(res) {
 
 					self.mylist7 = res.data.mylist7
 
-				}, function() {
-					console.log('请求失败')
 				})
 				//全部-钟表西洋器
-				getData('mock/5c0106de4ed9b43d7590d4eb/estimation/mylist8', 'get').then(function(res) {
+				estimationApi.watches().then(function(res) {
 
 					self.mylist8 = res.data.mylist8
 
-				}, function() {
-					console.log('请求失败')
 				})
 				//全部-文献书籍
-				getData('mock/5c0106de4ed9b43d7590d4eb/estimation/mylist9', 'get').then(function(res) {
+				estimationApi.books().then(function(res) {
 
 					self.mylist9 = res.data.mylist9
 
-				}, function() {
-					console.log('请求失败')
 				})
 				//全部-杂项
-				getData('mock/5c0106de4ed9b43d7590d4eb/estimation/mylist10', 'get').then(function(res) {
+				estimationApi.miscellaneous().then(function(res) {
 
 					self.mylist10 = res.data.mylist10
 
-				}, function() {
-					console.log('请求失败')
 				})
 
 			}, function() {

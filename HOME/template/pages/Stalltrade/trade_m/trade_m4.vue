@@ -681,7 +681,7 @@
 
 <script>
 	import '~/assets/css/trade.css'
-	import { getData } from '~/plugins/axios.js'
+	import CollectionApi from '~/api/stallcollection'
 	export default {
 		data() {
 			return {
@@ -707,73 +707,51 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5c0373ed0694c411d85d83cb/tradelist/t1').then(function(res) {
+			CollectionApi.allList().then(function(res) {
 				self.tradelist = res.data.tradelist
 				//瓷器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/t2').then(function(res) {
+				CollectionApi.Porcelain().then(function(res) {
 					self.tradelist1 = res.data.tradelist
-				}, function() {
-					console.log('请求失败')
 				})
 				//玉器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/t3').then(function(res) {
+				CollectionApi.Jade().then(function(res) {
 					self.tradelist2 = res.data.tradelist
-				}, function() {
-					console.log('请求失败')
 				})
 				//字画
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/t4').then(function(res) {
+				CollectionApi.painting().then(function(res) {
 					self.tradelist3 = res.data.tradelist
-				}, function() {
-					console.log('请求失败')
 				})
 				//钱币
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/t5').then(function(res) {
+				CollectionApi.Coin().then(function(res) {
 					self.tradelist4 = res.data.tradelist
-				}, function() {
-					console.log('请求失败')
 				})
 				//木器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/t6').then(function(res) {
+				CollectionApi.Woodenware().then(function(res) {
 					self.tradelist5 = res.data.tradelist
-				}, function() {
-					console.log('请求失败')
 				})
 				//铜器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/t7').then(function(res) {
+				CollectionApi.Bronze().then(function(res) {
 					self.tradelist6 = res.data.tradelist
-				}, function() {
-					console.log('请求失败')
 				})
 				//珠宝
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/t8').then(function(res) {
+				CollectionApi.Jewellery().then(function(res) {
 					self.tradelist7 = res.data.tradelist
-				}, function() {
-					console.log('请求失败')
 				})
 				//钟表西洋器
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/t9').then(function(res) {
+				CollectionApi.watches().then(function(res) {
 					self.tradelist8 = res.data.tradelist
-				}, function() {
-					console.log('请求失败')
 				})
 				//杂项
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/t10').then(function(res) {
+				CollectionApi.miscellaneous().then(function(res) {
 					self.tradelist9 = res.data.tradelist
-				}, function() {
-					console.log('请求失败')
 				})
 				//工艺品
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/t11').then(function(res) {
+				CollectionApi.Arts().then(function(res) {
 					self.tradelist10 = res.data.tradelist
-				}, function() {
-					console.log('请求失败')
 				})
 				//衍生品
-				getData('mock/5c0373ed0694c411d85d83cb/tradelist/t12').then(function(res) {
+				CollectionApi.Derivative().then(function(res) {
 					self.tradelist11 = res.data.tradelist
-				}, function() {
-					console.log('请求失败')
 				})
 			}, function() {
 				console.log('请求失败')

@@ -126,22 +126,22 @@
 						<div class="nav_box">
 							<ul id="nav_bulb" class="nav_bul">
 								<li class="nav_bli nav_blis" data="sel">
-									<router-link to="/Myhome">首页</router-link>
+									<nuxt-link to="/Myhome">首页</nuxt-link>
 								</li>
 								<li class="nav_bli" data="">
-									<router-link to="/UserInfo">个人信息</router-link>
+									<nuxt-link to="/UserInfo">个人信息</nuxt-link>
 								</li>
 								<li class="nav_bli" data="">
-									<router-link to="/Trade">交易系统</router-link>
+									<nuxt-link to="/Trade">交易系统</nuxt-link>
 								</li>
 								<li class="nav_bli" data="">
-									<router-link to="/Msglist/msglistsd">站内短信</router-link>
+									<nuxt-link to="/Msglist/msglistsd">站内短信</nuxt-link>
 								</li>
 								<li class="nav_bli" data="">
-									<router-link to="/AppCenter">应用中心</router-link>
+									<nuxt-link to="/AppCenter/Xiaobao_M">应用中心</nuxt-link>
 								</li>
 								<li class="nav_bli" data="">
-									<router-link to="/Quicks">快速指南</router-link>
+									<nuxt-link to="/Quicks">快速指南</nuxt-link>
 								</li>
 							</ul>
 							<div class="n_bl_menu">
@@ -151,10 +151,10 @@
 							<div class="n_bl_menu">
 								<div class="n_bl_mlist">
 									<ul>
-										<li v-for="(items,index) in navList" :key="index" :class="{active:items.isActive}" @click="activeFun(items)">
-											<router-link v-bind:to="items.id">
+										<li v-for="items in navList" :key="items.index" :class="{active:items.isActive}" @click="activeFun(items)">
+											<nuxt-link v-bind:to="items.id">
 												{{items.text}}
-											</router-link><span>|</span>
+											</nuxt-link><span>|</span>
 										</li>
 									</ul>
 								</div>
@@ -164,10 +164,10 @@
 								<div class="n_bl_mlist">
 
 									<ul>
-										<li v-for="(items,index) in navList2" :key="index" :class="{active:items.isActive}" @click="activeFunb(items)">
-											<router-link v-bind:to="items.id">
+										<li v-for="items in navList2" :key="items.index" :class="{active:items.isActive}" @click="activeFunb(items)">
+											<nuxt-link v-bind:to="items.id">
 												{{items.text}}
-											</router-link><span>|</span>
+											</nuxt-link><span>|</span>
 										</li>
 									</ul>
 								</div>
@@ -176,10 +176,10 @@
 							<div class="n_bl_menu">
 								<div class="n_bl_mlist">
 									<ul>
-										<li v-for="(items,index) in navList3" :key="index" :class="{active:items.isActive}" @click="activeFunc(items)">
-											<router-link v-bind:to="items.id">
+										<li v-for="items in navList3" :key="items.index" :class="{active:items.isActive}" @click="activeFunc(items)">
+											<nuxt-link v-bind:to="items.id">
 												{{items.text}}
-											</router-link><span>|</span>
+											</nuxt-link><span>|</span>
 										</li>
 									</ul>
 								</div>
@@ -188,12 +188,12 @@
 							<div class="n_bl_menu">
 								<div class="n_bl_mlist">
 									<ul>
-										<li v-for="(items,index) in navList5" :key="index" :class="{active:items.isActive}" @click="activeFune(items)">
-											<router-link v-bind:to="items.id">
+										<li v-for="items in navList5" :key="items.index" :class="{active:items.isActive}" @click="activeFune(items)">
+											<nuxt-link v-bind:to="items.id">
 												{{items.text}}
-											</router-link><span>|</span>
+											</nuxt-link><span>|</span>
 										</li>
-										<li v-for="(items,index) in navList6" :key="index" :class="{active:items.isActive}" @click="activeFunf(items)">
+										<li v-for="items in navList6" :key="items.index" :class="{active:items.isActive}" @click="activeFunf(items)">
 											<a v-bind:href="items.id">
 												{{items.text}}
 											</a><span>|</span>
@@ -218,7 +218,7 @@
 
 			<div id="home_f_box" class="home_f_box"></div>
 			<div style="background:none; top:345px;" class="home_f_box">
-				<a href="/" target="_blank"><img src="../assets/images/hyjfk_bg2.png"></a>
+				<a href="#" target="_blank"><img src="../assets/images/hyjfk_bg2.png"></a>
 			</div>
 			<div class="homemask"></div>
 
@@ -233,10 +233,10 @@
 									<img alt="交易系统" src="../assets/images/jy-icon.png">
 									<span>交易系统</span> <span class="arrow"></span></a>
 								<ul>
-									<li v-for="(items,index) in nLeft" :key="index" :class="{Leftshow:items.isActive}" @click="showFun(items)">
-										<router-link v-bind:to="items.id">
+									<li v-for="items in nLeft" :key="items.index" :class="{Leftshow:items.isActive}" @click="showFun(items)">
+										<nuxt-link v-bind:to="items.id">
 											{{items.text}}
-										</router-link>
+										</nuxt-link>
 									</li>
 								</ul>
 								<div style="clear: both">
@@ -249,10 +249,10 @@
 									<img alt="鉴定估价" src="../assets/images/jd-icon.png">
 									<span>鉴定估价</span> <span class="arrow"></span></a>
 								<ul>
-									<li v-for="(items,index) in nLeft2" :key="index" :class="{Leftshow:items.isActive}" @click="showFuna(items)">
-										<router-link v-bind:to="items.id">
+									<li v-for="items in nLeft2" :key="items.index" :class="{Leftshow:items.isActive}" @click="showFuna(items)">
+										<nuxt-link v-bind:to="items.id">
 											{{items.text}}
-										</router-link>
+										</nuxt-link>
 									</li>
 								</ul>
 								<div style="clear: both">
@@ -265,10 +265,10 @@
 									<img alt="地摊交易" src="../assets/images/dt-icon.png">
 									<span>地摊交易</span> <span class="arrow"></span></a>
 								<ul>
-									<li v-for="(items,index) in nLeft3" :key="index" :class="{Leftshow:items.isActive}" @click="showFunb(items)">
-										<router-link v-bind:to="items.id">
+									<li v-for="items in nLeft3" :key="items.index" :class="{Leftshow:items.isActive}" @click="showFunb(items)">
+										<nuxt-link v-bind:to="items.id">
 											{{items.text}}
-										</router-link>
+										</nuxt-link>
 									</li>
 								</ul>
 								<div style="clear: both">
@@ -281,10 +281,10 @@
 									<img alt="古玩商城" src="../assets/images/wd-icon.png">
 									<span>古玩商城</span> <span class="arrow"></span></a>
 								<ul>
-									<li v-for="(items,index) in nLeft4" :key="index" :class="{Leftshow:items.isActive}" @click="showFunc(items)">
-										<router-link v-bind:to="items.id">
+									<li v-for="items in nLeft4" :key="items.index" :class="{Leftshow:items.isActive}" @click="showFunc(items)">
+										<nuxt-link v-bind:to="items.id">
 											{{items.text}}
-										</router-link>
+										</nuxt-link>
 									</li>
 								</ul>
 								<div style="clear: both">
@@ -298,10 +298,10 @@
 									<img alt="在线拍卖" src="../assets/images/pm-icon.png">
 									<span>在线拍卖</span> <span class="arrow"></span></a>
 								<ul>
-									<li v-for="(items,index) in nLeft5" :key="index" :class="{Leftshow:items.isActive}" @click="showFund(items)">
-										<router-link v-bind:to="items.id">
+									<li v-for="items in nLeft5" :key="items.index" :class="{Leftshow:items.isActive}" @click="showFund(items)">
+										<nuxt-link v-bind:to="items.id">
 											{{items.text}}
-										</router-link>
+										</nuxt-link>
 									</li>
 								</ul>
 								<div style="clear: both">
@@ -314,15 +314,15 @@
 									<img src="../assets/images/xw-icon.png">
 									<span>华夏收藏APP</span> <span class="arrow"></span></a>
 								<ul>
-									<li v-for="(items,index) in nLeft6" :key="index" :class="{Leftshow:items.isActive}" @click="showFune(items)">
-										<router-link v-bind:to="items.id">
+									<li v-for="items in nLeft6" :key="items.index" :class="{Leftshow:items.isActive}" @click="showFune(items)">
+										<nuxt-link v-bind:to="items.id">
 											{{items.text}}
-										</router-link>
+										</nuxt-link>
 									</li>
-									<li v-for="(items,index) in nLeft7" :key="index" :class="{Leftshow:items.isActive}" @click="showFunf(items)">
-										<router-link v-bind:to="items.id">
+									<li v-for="items in nLeft7" :key="items.index" :class="{Leftshow:items.isActive}" @click="showFunf(items)">
+										<nuxt-link v-bind:to="items.id">
 											{{items.text}}
-										</router-link>
+										</nuxt-link>
 										<img src="../assets/images/nleftnew20170602.png" style="position:absolute;right:6px;top: 0px;">
 									</li>
 								</ul>
@@ -773,43 +773,43 @@
 				nLeft3: [{
 						text: '地摊上传',
 						isActive: false,
-						id: '/trade_m2'
+						id: '/Stalltrade/trade_m/trade_m2'
 					},
 					{
 						text: '交易评论',
 						isActive: false,
-						id: '/trade_m3'
+						id: '/Stalltrade/trade_m/trade_m3'
 					},
 					{
 						text: '所有地摊',
 						isActive: false,
-						id: '/trade_m1'
+						id: '/Stalltrade/trade_m/trade_m1'
 					},
 					{
 						text: '地摊收藏',
 						isActive: false,
-						id: '/trade_m4'
+						id: '/Stalltrade/trade_m/trade_m4'
 					},
 					{
 						text: '待售藏品',
 						isActive: false,
-						id: '/trade_m1'
+						id: '/Stalltrade/trade_m/trade_m1'
 					},
 					{
 						text: '已售藏品',
 						isActive: false,
-						id: '/trade_list3'
+						id: '/Stalltrade/trade_m/trade_list'
 					},
 					{
 						text: '工艺品区',
 						isActive: false,
-						id: '/trade_list4'
+						id: '/Stalltrade/trade_m/trade_list2'
 					}
 				],
 				nLeft4: [{
 						text: '网店管理',
 						isActive: false,
-						id: '/shop_list1'
+						id: '/Antique/shop_list/shop_list1'
 					},
 					{
 						text: '网店介绍',
@@ -819,17 +819,17 @@
 					{
 						text: '发布商品',
 						isActive: false,
-						id: '/ShopProd_M'
+						id: '/Antique/Commodity/ShopProd_M'
 					},
 					{
 						text: '商品分类',
 						isActive: false,
-						id: '/shopKind'
+						id: '/Antique/Commodity/shopKind'
 					},
 					{
 						text: '商品管理',
 						isActive: false,
-						id: '/Shangjia'
+						id: '/Antique/Commodity/Shangjia'
 					},
 					{
 						text: '古玩店铺',
@@ -839,17 +839,17 @@
 					{
 						text: '商品评论',
 						isActive: false,
-						id: '/shopProd_Comment1'
+						id: '/Antique/shopProd/shopProd_Comment1'
 					},
 					{
 						text: '商品收藏',
 						isActive: false,
-						id: '/shopProd_Comment2'
+						id: '/Antique/shopProd/shopProd_Comment2'
 					},
 					{
 						text: '我的求购',
 						isActive: false,
-						id: '/myBuyInfo1'
+						id: '/Antique/myBuyInfo/myBuyInfo1'
 					},
 					{
 						text: '求购发布',
@@ -865,52 +865,52 @@
 				nLeft5: [{
 						text: '拍品上传',
 						isActive: false,
-						id: '/AuctionProduct_M6'
+						id: '/Auction/AuctionProduct_M/AuctionProduct_M6'
 					},
 					{
 						text: '到期拍品',
 						isActive: false,
-						id: '/MyAuction'
+						id: '/Auction/AuctionProduct_M/MyAuction'
 					},
 					{
 						text: '我的拍品',
 						isActive: false,
-						id: '/AuctionProduct_M1'
+						id: '/Auction/AuctionProduct_M/AuctionProduct_M1'
 					},
 					{
 						text: '我的专场',
 						isActive: false,
-						id: '/Auction_list1'
+						id: '/Auction/Auctionlist/Auction_list'
 					},
 					{
 						text: '我的报价',
 						isActive: false,
-						id: '/AuctionProduct_M3'
+						id: '/Auction/AuctionProduct_M/AuctionProduct_M3'
 					},
 					{
 						text: '别人报价',
 						isActive: false,
-						id: '/AuctionProduct_M4'
+						id: '/Auction/AuctionProduct_M/AuctionProduct_M4'
 					},
 					{
 						text: '拍品收藏',
 						isActive: false,
-						id: '/AuctionProduct_M2'
+						id: '/Auction/AuctionProduct_M/AuctionProduct_M2'
 					},
 					{
 						text: '出价资格',
 						isActive: false,
-						id: '/MyAuctionPower2'
+						id: '/Auction/MyAuctionPower/MyAuctionPower2'
 					},
 					{
 						text: '专拍申请',
 						isActive: false,
-						id: '/Auction_Apply1'
+						id: '/Auction/Auctionlist/Auction_Apply'
 					},
 					{
 						text: '专场保证金',
 						isActive: false,
-						id: '/DepositStatus1'
+						id: '/Auction/DepositStatus/DepositStatus'
 					}
 				],
 				nLeft6: [{
@@ -1176,12 +1176,17 @@
 					var index = $(this).index();
 					$('.n_bl_menu').eq(index).addClass('selected').siblings('div').removeClass('selected');
 				})
+				//顶部导航悬停显示下拉导航菜单
+				$("#shortcut-2013 .menu").mousemove(function(){
+					$(this).addClass('hover').siblings('li').removeClass('hover');
+				})
+				$("#shortcut-2013 .menu").mouseout(function(){
+					$(this).removeClass('hover')
+				})
 			});
 		}
 	}
 </script>
 <style>
-[v-cloak] {
-  display: none; /* 代码刷新闪现隐藏 */
-}
+
 </style>

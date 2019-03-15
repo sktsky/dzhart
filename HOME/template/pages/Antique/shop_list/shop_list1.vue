@@ -35,7 +35,7 @@
 
 <script>
 	import '~/assets/css/shop.css'
-	import { getData } from '~/plugins/axios.js'
+	import shopApi from '~/api/shoplist'
 	export default {
 		data() {
 			return {
@@ -44,7 +44,7 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5c04e14c2775cc3f82910d30/shop/').then(function(res) {
+			shopApi.shoplist().then(function(res) {
 				self.shoplist = res.data.shoplist
 			}, function() {
 				console.log('请求失败')

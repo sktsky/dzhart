@@ -72,7 +72,7 @@
 
 <script>
 	import '~/assets/css/paimai.css'
-	import { getData } from '~/plugins/axios.js'
+	import listApi from '~/api/auctionl'
 	export default {
 		data() {
 			return {
@@ -81,7 +81,7 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5c05e35de1eaff56e652cef1/myauction/list').then(function(res) {
+			listApi.Special().then(function(res) {
 				self.aulist = res.data.list
 			})
 		}

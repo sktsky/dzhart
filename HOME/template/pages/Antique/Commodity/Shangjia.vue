@@ -409,7 +409,7 @@
 
 <script>
 	import '~/assets/css/shop.css'
-	import { getData } from '~/plugins/axios.js'
+	import shangApi from '~/api/commodity'
 	export default {
 		data() {
 			return {
@@ -430,29 +430,29 @@
 		},
 		created: function() {
 			var self = this; //全部商品
-			getData('mock/5c206fc50fd1077df5e6e924/s/shang').then(function(res) {
+			shangApi.allList().then(function(res) {
 
 				self.list = res.data.list
 				//待售商品
-				getData('mock/5c206fc50fd1077df5e6e924/s/s1').then(function(res) {
+				shangApi.forsale().then(function(res) {
 					self.list1 = res.data.list1
 				})
 				//已定商品
-				getData('mock/5c206fc50fd1077df5e6e924/s/s2').then(function(res) {
+				shangApi.fixed().then(function(res) {
 					self.list2 = res.data.list2
 				})
 				//已售商品
-				getData('mock/5c206fc50fd1077df5e6e924/s/s3').then(function(res) {
+				shangApi.sold().then(function(res) {
 					self.list3 = res.data.list3
 
 				})
 				//推荐商品
-				getData('mock/5c206fc50fd1077df5e6e924/s/s4').then(function(res) {
+				shangApi.Recommend().then(function(res) {
 					self.list4 = res.data.list4
 
 				})
 				//置顶商品
-				getData('mock/5c206fc50fd1077df5e6e924/s/s5').then(function(res) {
+				shangApi.roof().then(function(res) {
 					self.list5 = res.data.list5
 
 				})

@@ -268,7 +268,7 @@
 										<p>
 											<a href="http://www.cang.com/auction/974814.html" target="_blank" class="col65 b">{{msg.number}}</a><br/>
 											<span class="colf0">{{msg.name}}</span><br /><span class="colf0">{{msg.time}}</span><br />
-										</p>	
+										</p>
 									</td>
 									<td class="pai_td_xg" align="center" valign="middle" bgcolor="#FFFFFF">
 										{{msg.pice}}
@@ -277,7 +277,7 @@
 										<p>
 											<a href="http://www.cang.com/auction/974814.html" target="_blank" class="col65 b">{{msg.state}}</a><br/>
 											<span class="colf0">{{msg.bite}}</span><br /><span class="colf0">{{msg.operation}}</span><br />
-										</P>	
+										</P>
 									</td>
 
 								</tr>
@@ -305,7 +305,7 @@
 
 <script>
 	import '~/assets/css/paimai.css'
-	import { getData } from '~/plugins/axios.js'
+	import LotApi from '~/api/auctionproduct'
 	export default {
 		data() {
 			return {
@@ -324,35 +324,27 @@
 		},
 		created: function() {
 			var self = this;
-			getData('mock/5c05e35de1eaff56e652cef1/myauction/l1').then(function(res) {
+			LotApi.offer().then(function(res) {
 				self.mlist = res.data.list
 				//胜出
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/l2').then(function(res) {
+				LotApi.beat().then(function(res) {
 					self.mlist1 = res.data.list
 
-				}, function() {
-					console.log('失败')
 				})
 				//领先
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/l3').then(function(res) {
+				LotApi.Lead().then(function(res) {
 					self.mlist2 = res.data.list
 
-				}, function() {
-					console.log('失败')
 				})
 				//落后
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/l4').then(function(res) {
+				LotApi.backward().then(function(res) {
 					self.mlist3 = res.data.list
 
-				}, function() {
-					console.log('失败')
 				})
 				//结拍
-				getData('mock/5c05e35de1eaff56e652cef1/myauction/l5').then(function(res) {
+				LotApi.tiepat().then(function(res) {
 					self.mlist4 = res.data.list
 
-				}, function() {
-					console.log('失败')
 				})
 			})
 		}

@@ -2,11 +2,11 @@
 	<template id="Xiaobao_M">
 			<div class="mright Xiaobao">
                 <div class="menu">
-                    <router-link to="/Xiaobao_M" class="menu_n menu_y" @click="routerBack()">开通消保</router-link>
+                    <router-link to="/AppCenter/Xiaobao_M" class="menu_n menu_y" @click="routerBack()">开通消保</router-link>
                     <div class="menu_fill1" style="height:53px;"></div>
                     <div style="clear:both;"></div>
                 </div>
-                <img src="images/xiaobaoTopImg.png" alt="" style="margin:20px 0px 0px 10px;">
+                <img src="../../../assets/images/xiaobaoTopImg.png" alt="开通消保" style="margin:20px 0px 0px 10px;">
                 <div class="Spacing1">当前账户资金余额：<span id="lbCurMoney" class="obvious">0.00</span></div>
                 <div id="PnTradePwd">
 	
@@ -92,7 +92,7 @@
 	</template>	
 
 <script>
-	import '~/assets/css/Custom.css'
+	import '~/assets/css/Custom(2).css'
 	import '~/assets/css/jystyle.css'
 	export default {
 		

@@ -31,7 +31,7 @@
 
 <script>
 	import '~/assets/css/Custom.css'
-	import { getData } from '~/plugins/axios.js'
+	import cangbiApi from '~/api/cangbi'
 	export default {
 		data() {
 			return {
@@ -41,7 +41,7 @@
 		created: function() {
 			var self = this;
 			//获取藏币收支请求
-			getData('mock/5bfcdf487b0f173d0a13af27/cangbi/cangbi', 'get').then(function(res) {
+			cangbiApi.Budget().then(function(res) {
 
 				self.cangbilist = res.data.cangbilist
 
