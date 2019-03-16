@@ -1,5 +1,5 @@
 import request from '@/utils/request'
-const group_name = 'information'
+const group_name = 'personaldate'
 //const api_name = 'enterprise'
 export default {
   getList() {
@@ -10,7 +10,7 @@ export default {
   },
   save(form) {
     return request({
-      url: `/information/add.do`,
+      url: `/$(group_name)/add.do`,
       method: 'post',
       data: form
     })

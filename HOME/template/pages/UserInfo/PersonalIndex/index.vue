@@ -13,11 +13,11 @@
               </label>
             </td>
           </tr>
-          <tr>
+          <tr style="height:120px;">
             <td class="col1">用户头像：</td>
             <td class="col2">
               <span class="pf-avatar-box" id="pf-avatar-box">
-                <img :src="headPicList" width="80" height="80">
+                <img :src="headPicList" width="80" height="80" onerror="this.src='http://img5.duitang.com/uploads/item/201410/02/20141002212239_zWR55.jpeg';this.onerror=null">
               </span>
             </td>
           </tr>
