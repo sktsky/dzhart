@@ -1,16 +1,16 @@
 import request from '@/utils/request'
-const group_name = 'personaldate'
+const group_name = 'personaldata'
 //const api_name = 'enterprise'
 export default {
   getList() {
     return request({
-      url: `/${group_name}/findOne.do?id=38`,
+      url: `/${group_name}/findOne.do?id=5`,
       method: 'get'
     })
   },
   save(form) {
     return request({
-      url: `/$(group_name)/add.do`,
+      url: `/${group_name}/add.do`,
       method: 'post',
       data: form
     })

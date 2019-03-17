@@ -8,8 +8,8 @@
           <tr>
             <td class="col1">用户名：</td>
             <td class="col2">
-              <label>
-                <b>sktsky</b>
+              <label v-for="(key,index) in usernameList" :key="index">
+                <b>{{key}}</b>
               </label>
             </td>
           </tr>
@@ -17,15 +17,24 @@
             <td class="col1">用户头像：</td>
             <td class="col2">
               <span class="pf-avatar-box" id="pf-avatar-box">
-                <img :src="headPicList" width="80" height="80" onerror="this.src='http://img5.duitang.com/uploads/item/201410/02/20141002212239_zWR55.jpeg';this.onerror=null">
+                <img
+                  :src="headPicList"
+                  width="80"
+                  height="80"
+                  onerror="this.src='https://p5.gexing.com/GSF/touxiang/20190315/18/c2cac397bcfdbe1402ce007c117a01f5.jpg';this.onerror=null"
+                >
               </span>
             </td>
           </tr>
           <tr>
             <td class="col1">手机号码：</td>
             <td class="col2">
-              <div style="float:left;padding-top:5px;" v-for="(key1,index1) in phonelList" :key="index1">
-                <b>{{key1}}</b>
+              <div
+                style="float:left;padding-top:5px;"
+                v-for="(key,index) in phonelList"
+                :key="index"
+              >
+                <b>{{key}}</b>
               </div>
               <div class="goto" style="float:left; margin-left:6px;">
                 <nuxt-link to="/UserInfo/PwdVerify">
@@ -37,8 +46,12 @@
           <tr>
             <td class="col1">邮箱：</td>
             <td class="col2">
-              <div style="float:left;padding-top:5px;" v-for="(key2,index2) in emailList" :key="index2">
-                <b>{{key2}}</b>
+              <div
+                style="float:left;padding-top:5px;"
+                v-for="(key,index) in emailList"
+                :key="index"
+              >
+                <b>{{key}}</b>
               </div>
               <div class="goto" style="float:left; margin-left:6px;">
                 <nuxt-link to="/UserInfo/PwdVerify2">
@@ -50,16 +63,16 @@
           <tr>
             <td class="col1">所在地：</td>
             <td class="col2">
-              <div style="float:left;" v-for="(key3,index3) in provinceList" :key="index3">
-                <el-tag type="danger">{{key3}}</el-tag>
+              <div style="float:left;" v-for="(key,index) in provinceList" :key="index">
+                <el-tag type="danger">{{key}}</el-tag>
               </div>
             </td>
           </tr>
           <tr>
             <td class="col1">性别：</td>
             <td class="col2">
-              <div style="float:left;" v-for="(key4,index4) in genderList" :key="index4">
-                <b>{{key4}}</b>
+              <div style="float:left;" v-for="(key,index) in genderList" :key="index">
+                <b>{{key}}</b>
               </div>
             </td>
           </tr>
@@ -67,47 +80,52 @@
             <td class="col1">生日：</td>
             <td class="col2">
               <div style="float:left;">
-                <el-date-picker v-model="birthdayList" :disabled="true" type="date" placeholder="选择日期"></el-date-picker>
+                <el-date-picker
+                  v-model="birthdayList"
+                  :disabled="true"
+                  type="date"
+                  placeholder="选择日期"
+                ></el-date-picker>
               </div>
             </td>
           </tr>
           <tr>
             <td class="col1">QQ号码：</td>
             <td class="col2">
-              <div style="float:left;" v-for="(key5,index5) in qqList" :key="index5">
-                <b>{{key5}}</b>
+              <div style="float:left;" v-for="(key,index) in qqList" :key="index">
+                <b>{{key}}</b>
               </div>
             </td>
           </tr>
           <tr>
             <td class="col1">微信：</td>
             <td class="col2">
-              <div style="float:left;" v-for="(key6,index6) in weixinList" :key="index6">
-                <b>{{key6}}</b>
+              <div style="float:left;" v-for="(key,index) in weixinList" :key="index">
+                <b>{{key}}</b>
               </div>
             </td>
           </tr>
           <tr>
             <td class="col1">爱好：</td>
             <td class="col2">
-              <div style="float:left;" v-for="(key7,index7) in hobbyList" :key="index7">
-                <el-tag type="danger">{{key7}}</el-tag>
+              <div style="float:left;" v-for="(key,index) in hobbyList" :key="index">
+                <el-tag type="danger">{{key}}</el-tag>
               </div>
             </td>
           </tr>
           <tr>
             <td class="col1">联系地址：</td>
             <td class="col2">
-              <div style="float:left;" v-for="(key8,index8) in addressList" :key="index8">
-                <b>{{key8}}</b>
+              <div style="float:left;" v-for="(key,index) in addressList" :key="index">
+                <b>{{key}}</b>
               </div>
             </td>
           </tr>
           <tr>
             <td class="col1">个人简介：</td>
             <td class="col2">
-              <div style="float:left;" v-for="(key9,index9) in profileList" :key="index9">
-                <b>{{key9}}</b>
+              <div style="float:left;" v-for="(key,index) in profileList" :key="index">
+                <b>{{key}}</b>
               </div>
             </td>
           </tr>
@@ -130,7 +148,7 @@
           <el-row>
             <el-col :span="12">
               <el-form-item label="用户名">
-                <el-input :disabled="true" v-model="form.name" placeholder="用户名"></el-input>
+                <el-input :disabled="true" v-model="form.username" placeholder="用户名"></el-input>
               </el-form-item>
             </el-col>
           </el-row>
@@ -153,7 +171,7 @@
           <el-row>
             <el-col :span="12">
               <el-form-item label="手机号码">
-                <el-input :disabled="true" v-model="form.phone" placeholder="手机号码"></el-input>
+                <el-input :disabled="true" v-model="form.phoneId" placeholder="手机号码"></el-input>
               </el-form-item>
             </el-col>
           </el-row>
@@ -165,12 +183,7 @@
             </el-col>
           </el-row>
           <el-form-item label="所在地">
-            <el-cascader
-              size="large"
-              :options="options"
-              v-model="form.province"
-              @change="handleChange"
-            ></el-cascader>
+            <el-cascader size="large" :options="options" v-model="province" @change="handleChange"></el-cascader>
           </el-form-item>
           <el-form-item label="性别:">
             <el-radio-group v-model="form.gender">
@@ -191,7 +204,7 @@
           <el-row>
             <el-col :span="12">
               <el-form-item label="QQ号码">
-                <el-input v-model="form.qq" placeholder="QQ号码"></el-input>
+                <el-input v-model="form.qqId" placeholder="QQ号码"></el-input>
               </el-form-item>
             </el-col>
           </el-row>
@@ -257,8 +270,9 @@ import qs from "qs";
 export default {
   data() {
     return {
+      province: [],
       items: [],
-      phonelList:"",
+      phonelList: "",
       provinceList: [], //所在地
       options: regionData, //地区数据源
       dialogImageUrl: "", //上传图片回显地址
@@ -273,13 +287,14 @@ export default {
       emailList: "", //邮箱
       phoneList: "", //手机
       headPicList: "", //头像
+      usernameList:"",
       form: {
-        sellerId: "1", //商家名称
-        headPic: "", //上传头像
+        username: "admin", //用户名称
+        pic: "", //上传头像
         province: [], //所在地
         gender: "", //性别
         birthday: "", //生日
-        qq: "", //QQ
+        qqId: "", //QQ
         weixin: "", //微信
         hobby: [], //爱好
         address: "", //地址
@@ -313,17 +328,18 @@ export default {
 
           // self.newheadPic = eval(self.items[11].province);
           //console.log(self.newheadPic)
-          this.provinceList = eval(this.items[11].province);
-          this.headPicList = this.items[5].headPic;
+          this.usernameList = this.items[13].username;
+          this.provinceList = eval(this.items[10].province);
+          this.headPicList = this.items[8].pic;
           this.emailList = this.items[3].email;
-          this.phoneList = this.items[9].phone;
+          this.phoneList = this.items[7].phoneId;
           this.genderList = this.items[4].gender;
-          this.qqList = this.items[12].qq;
+          this.qqList = this.items[11].qqId;
           this.weixinList = this.items[14].weixin;
           this.addressList = this.items[0].address;
-          this.profileList = this.items[10].profile;
+          this.profileList = this.items[9].profile;
           this.birthdayList = this.items[1].birthday;
-          this.hobbyList = eval(this.items[6].hobby);
+          this.hobbyList = eval(this.items[5].hobby);
         },
         function() {
           console.log("请求失败");
@@ -349,7 +365,7 @@ export default {
     handleSuccess(response) {
       //console.log(file)
       console.log(response);
-      this.form.headPic = response.url;
+      this.form.pic = response.url;
       //console.log(self.form.file);
     },
 

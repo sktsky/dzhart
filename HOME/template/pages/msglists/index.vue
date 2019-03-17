@@ -28,6 +28,7 @@
 
 <script>
 	import '~/assets/css/msg.css'
+	export default{};
 </script>
 
 <style>
