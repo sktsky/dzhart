@@ -23,7 +23,7 @@
             <tr>
               <td class="col1">手机区域号：</td>
               <td class="col2">
-                <el-select v-model="value" placeholder="请选择">
+                <el-select v-model="form.areacode" placeholder="请选择">
                   <el-option
                     v-for="item in phonevalue"
                     :key="item.value"
@@ -37,7 +37,7 @@
               <td class="col1">手机号码：</td>
               <td class="col2">
                 <el-col :span="12">
-                  <el-input v-model="phone" placeholder="请输入手机号"></el-input>
+                  <el-input v-model="form.phoneId" placeholder="请输入手机号"></el-input>
                 </el-col>
               </td>
             </tr>
@@ -57,7 +57,7 @@
             <tr>
               <td class="col1">已绑定手机号：</td>
               <td class="col2">
-                <label id="lbBindMobile" style="font-weight:700;">155***5970</label>
+                <label id="lbBindMobile" style="font-weight:700;">{{form.phoneId}}</label>
               </td>
             </tr>
             <tr>
@@ -70,7 +70,7 @@
               <td class="col1">验证码：</td>
               <td class="col2">
                 <el-col :span="12">
-                  <el-input v-model="input" placeholder="请输入验证码"></el-input>
+                  <el-input v-model="form.VerificationCode" placeholder="请输入验证码"></el-input>
                 </el-col>
               </td>
             </tr>
@@ -79,7 +79,7 @@
             </tr>
           </tbody>
         </table>
-        <el-button style="margin-top: 12px; margin-left:250px;" @click="next">下一步</el-button>
+        <el-button style="margin-top: 12px; margin-left:250px;" @click="send()">下一步</el-button>
       </div>
       <div class="3" v-if=" active === 3">
         <table class="userinfo_table bindmobile" style="display: table;">
@@ -94,7 +94,9 @@
             </tr>
           </tbody>
         </table>
-        <el-button style="margin-top: 12px; margin-left:250px;">返回个人信息</el-button>
+        <nuxt-link to="/UserInfo/PersonalIndex">
+          <el-button style="margin-top: 12px; margin-left:250px;">返回个人信息</el-button>
+        </nuxt-link>
       </div>
       <div class="clear"></div>
     </div>
@@ -151,6 +153,7 @@ import "~/assets/css/element.css"; //element自定义样式
 import "~/assets/css/element-icons.ttf";
 import "~/assets/css/element-icons.woff";
 import "~/assets/css/UserInfo.css";
+import phoneApi from "@/api/phone"; //手机验证api
 export default {
   data() {
     return {
@@ -241,13 +244,31 @@ export default {
           label: "马来西亚 Malaysia +60"
         }
       ],
-      value: ""
+      phone: "",
+      value: "",
+      form: {
+        areacode: "",
+        phoneId: "",
+        VerificationCode: "",
+        username: "admin",
+        password: "123456"
+      }
     };
   },
   //下一步
   methods: {
     next() {
       if (this.active++ > 2) this.active = 1;
+    },
+    send() {
+      phoneApi.send(this.form).then(require => {
+        //消息提示
+        this.$message({
+          message: require.data.message,
+          type: require.data.success ? "success" : "error"
+        });
+      });
+      this.active = 3;
     }
   }
 };

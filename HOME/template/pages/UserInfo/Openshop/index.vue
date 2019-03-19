@@ -28,16 +28,12 @@
             <br>⑩商家信誉值快速提升；
           </p>
           <p style="margin-top:15px;">
-            <input id="check" type="checkbox" checked="checked" onchange="ss()">我已阅读并同意
-            <a
-              href="javascript:void(0)"
-              id="enr_one"
-              style=" text-decoration:underline;"
-            >《华夏收藏网个人/网店交易守则》</a>
+            <input type="checkbox" checked="checked" onchange="ss()">我已阅读并同意
+            <a href="javascript:void(0)" style=" text-decoration:underline;">《华夏收藏网个人/网店交易守则》</a>
           </p>
         </div>
       </div>
-      <el-button style="margin-top: 12px; margin-left:50%;" @click="next">下一步</el-button>
+      <el-button type="primary" style="margin-top: 12px; margin-left:50%;" @click="next">下一步</el-button>
     </div>
 
     <div v-if=" active === 1 ">
@@ -47,10 +43,10 @@
             <el-input v-model="form.username"></el-input>
           </el-form-item>
           <el-form-item label="网店名称">
-            <el-input v-model="form.nickname"></el-input>
+            <el-input v-model="form.nickName"></el-input>
           </el-form-item>
           <el-form-item label="网店类别">
-            <el-select v-model="form.Shopcategory" placeholder="请选择">
+            <el-select v-model="form.shoptype" placeholder="请选择">
               <el-option
                 v-for="item in catList"
                 :key="item.value"
@@ -60,7 +56,7 @@
             </el-select>
           </el-form-item>
           <el-form-item label="店长姓名">
-            <el-input v-model="form.name"></el-input>
+            <el-input v-model="form.shopname"></el-input>
           </el-form-item>
           <template>
             <el-form-item label="所在省份">
@@ -78,13 +74,14 @@
             <el-input v-model="form.telephone"></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" @click="next">立即提交</el-button>
+            <el-button type="primary" @click="send()">立即提交</el-button>
             <el-button>取消</el-button>
           </el-form-item>
         </el-form>
         <div class="clear"></div>
       </div>
     </div>
+
     <div v-if=" active === 2 ">
       <div class="step">
         <div
@@ -97,6 +94,7 @@
         <el-button type="primary">立即开通</el-button>
       </div>
     </div>
+
     <br>
     <br>
     <br>
@@ -127,64 +125,53 @@
 <script>
 import "~/assets/css/UserInfo.css";
 import "~/assets/css/jystyle.css";
-import axios from "axios";
+import openshopApi from "@/api/openshop";
+import { regionData, CodeToText } from "element-china-area-data";
 export default {
   data() {
     return {
-      cityList: [],
-      catList: [],
+      options: regionData, //地区数据源
       active: 0,
       form: {
-        username: "",
-        nickname: "",
-        Shopcategory: "",
-        name: "",
-        province: "",
-        telephone: ""
+        username: "admin", //用户名
+        nickName: "", //网店名称
+        shoptype: "", //网店类别
+        shopname: "", //店长姓名
+        province: "", //所在省份
+        telephone: "" //联系电话
       }
     };
   },
   methods: {
     //申请提交
-    onSubmit() {
-      var obj = this.form;
-      axios
-        .post("http://localhost:8082/dzhshop/add.do", obj)
-        .then(function(response) {
-          console.log(response);
-        })
-        .catch(function(error) {
-          console.log(error);
+    send() {
+      openshopApi.send(this.form).then(require => {
+        this.$message({
+          message: require.data.message,
+          type: require.data.success ? "success" : "error"
         });
+      });
+      this.active = 2;
     },
     //下一步骤
     next() {
       if (this.active++ > 2) this.active = 0;
     }
   },
-  created: function() {
-    var self = this;
-    //开店省份
-    axios.get("http://localhost:8082/provinces/findAll.do").then(
-      function(res) {
-        self.cityList = res.data;
-      },
-      function() {
-        console.log("请求失败");
-      }
-    );
-    //获取网店类别
-    axios
-      .get("http://localhost:8082/itemCat/findByParentId.do?parentId=0")
-      .then(
-        function(res) {
-          self.catList = res.data;
-        },
-        function() {
-          console.log("请求失败");
-        }
-      );
-  }
+  // created: function() {
+  //   var self = this;
+  //   //获取网店类别
+  //   axios
+  //     .get("http://localhost:8082/itemCat/findByParentId.do?parentId=0")
+  //     .then(
+  //       function(res) {
+  //         self.catList = res.data;
+  //       },
+  //       function() {
+  //         console.log("请求失败");
+  //       }
+  //     );
+  // }
 };
 </script>
 
