@@ -323,8 +323,7 @@ public class CameraControler : MonoBehaviour {
         {
             addAngleDistance *= sObj.fovTweenLate.z;//缓动
             if (sObj.camMode == CameraTargetScriptableObject.CameraMode.人视穿行 && isTouchUp)
-                angleDistance.x *= 0.92f;
-                //angleDistance.x *= sObj.fovTweenLate.z;//缓动回正
+                angleDistance.x *= sObj.fovTweenLate.z;//缓动回正
         }
     }
     void RotateCamera()
@@ -519,25 +518,28 @@ public class CameraControler : MonoBehaviour {
     {
         if (director) return;
 
-        director = dir;
-        isAniamtion = true;
+        director = Instantiate(dir);
+        director.gameObject.SetActive(true);
         sRigidBody.useGravity = false;
         sRigidBody.isKinematic = true;
         sCapsuleCollider.enabled = false;
         director.Play();
         director.extrapolationMode = DirectorWrapMode.Loop;
-        director.GetComponent<Camera>().enabled = false;//动画相机隐藏
+        if (director.GetComponent<Camera>()) director.GetComponent<Camera>().enabled = false;
+        if (director.GetComponent<AudioListener>()) director.GetComponent<AudioListener>().enabled = false;
+        isAniamtion = true;
     }
     public void CloseAniamtion()
     {
         if (!director) return;
 
         director.Stop();
+        Destroy(director.gameObject);
+        director = null;
         sRigidBody.useGravity = true;//打开重力
         sRigidBody.isKinematic = false;//关闭自定义动画模式
         sCapsuleCollider.enabled = true;//打开碰撞
         isAniamtion = false;
-        director = null;
     }
 
 
